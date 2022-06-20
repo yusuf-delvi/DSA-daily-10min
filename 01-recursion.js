@@ -30,3 +30,13 @@ function factorial(n) {
 
 console.log(sum(5)); // 15
 console.log(factorial(5)); // 120
+
+// Problem n(2)
+function recursivePowerN(base, n) {
+	// Base case
+	if (n === 0) return 1;
+
+	return base * recursivePowerN(base, n - 1);
+}
+
+console.log(recursivePowerN(2, 5)); //32
